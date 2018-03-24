@@ -12,10 +12,14 @@ body
 	font-family: 'BigNoodleTitling', sans-serif
 
 
+html 
+    width: 100%
+    height: 100%
+    -webkit-font-smoothing: antialiased
 
 
 h1
-  font-size: 38px
+  font-size: 2.4rem
   letter-spacing: 0.09em
   color: #686868
   text-transform: uppercase
@@ -23,15 +27,11 @@ h1
 
 .container
 	display: flex
-	max-width: 1280px
-	margin: 0 auto	
-	height: 100%
-
-.container_header
-	display: flex
 	width: 1280px
 	margin: 0 auto	
 	height: 100%
+
+
 
 
 a 
@@ -83,6 +83,7 @@ a
 .header_menu li
 	display: inline-block
 	font-size: 24px
+	text-align: center
 
 .header_menu li a
 	color: #686868
@@ -391,10 +392,11 @@ a
 	justify-content: center
 	flex: auto
 	height: 100%
+	max-width: 100%
 
 .skills
 	display: flex
-	width: 100%
+	max-width: 100%
 	justify-content: center
 	align-items: center
 
@@ -403,12 +405,14 @@ a
 	height: 900px
 
 .designer
-	height: 400px
+	min-height: 400px
 	width: 20%
 	margin-right: 3%
 	background-color: #EAEAEA
 	text-align: center
 	box-sizing: border-box
+
+
 
 .designer h3
 	text-transform: uppercase
@@ -428,14 +432,13 @@ a
   padding: 10px 3px 0 0 
 
 .img_designer
- margin-top: 60px
- -moz-border-radius: 100px 
- -webkit-border-radius: 100px
- -khtml-border-radius: 100px
+  margin-top: 60px
   border-radius: 100px
+  width: 80%
+
 
 .my_skills
-	width: 70%
+	max-width: 70%
 	min-height: 400px
 	background-color: #EAEAEA
 	padding: 40px
@@ -519,7 +522,7 @@ a
 .feature_list
 	display: flex
 	justify-content: space-between
-	width: 800px
+	max-width: 70%
 
 .feature_item
 	display: inline-block
@@ -668,7 +671,7 @@ a
 	margin-top: 10%
 
 .basic
-	height: 327.5px
+	max-height: 327.5px
 	background-color: #1E272B
 
 .first_p
@@ -736,12 +739,9 @@ a
 	opacity: 0.8
 	
 
+@media screen and (max-width: 950px)
 
-	
-
-
-
-
+ 
 
 	
 
