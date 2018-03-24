@@ -17,6 +17,9 @@ html
     height: 100%
     -webkit-font-smoothing: antialiased
 
+[type="checkbox"]:not(:checked), [type="checkbox"]:checked 
+	    display: none
+	    
 
 h1
   font-size: 2.4rem
@@ -765,7 +768,7 @@ a
 	#menu, label:before, label:after 
 	    content: " "
 	    position: absolute
-	    left: 100px
+	    left: 100%
 	    width: 40px
 	    height: 5px
 	    background-color: yellow
@@ -778,6 +781,7 @@ a
 	    padding: 38px 70px
 	    position: absolute
 	    z-index: 1
+	    right: 0
 
 	label:before
 	  top: 50px
@@ -785,10 +789,11 @@ a
 	  top: 70px
 
 	#menu 
-	    top: 44px
+	    top: 64px
 	    width: 40px
 	    transition: .2s ease
 	    z-index: 0
+	    right: 0
 
 	#menu li 
 	    line-height: 0.5
@@ -797,17 +802,18 @@ a
 
 
 	#menu-toggle:checked + label:before 
-	    top: 60px
-	    left: 50px
+	    top: 50%
+	    left: 100%
 	    transform: rotate(-45deg)
 
 	#menu-toggle:checked + label:after 
-	    top: 60px
-	    left: 50px
+	    top: 50%
+	    left: 100%
 	    transform: rotate(45deg)
 
 	#menu-toggle:checked + label + #menu 
-	    top: 44px
+	    top: 50%
+	    left: 50%
 	    width: 120px
 	    height: 200px
 	    box-shadow: 0 2px 5px rgba(0,0,0,0.26)
