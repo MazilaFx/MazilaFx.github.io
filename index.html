@@ -7,11 +7,12 @@
 		<link rel="stylesheet" href="css/main.css">
 		<script src='jquery-3.3.1.min.js'></script>
 		<script src='js/script.js'></script>
-		
+		<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>');
+  </script>
 	</head>
 	<body>
 		<header class='header'>
-			<div class="container">
+			<div class="container_header">
 				<div class="header__inner">
 					<div class='header_logo'>
 						<img src="img/logo.png" alt="" class='header-logo__img'>
@@ -193,7 +194,6 @@
 						<div class="feature_item_sum">100+</div>
 					</div>
 					
-
 				</div>
 			</div>
 		</div>
@@ -201,28 +201,46 @@
 </div>
 <a name='blog_posts'></a>
 <div class="blogs default_main">
+	<div class="container">
+		<div class="blogs_inner">
 	<h1>blog posts</h1>
 	<img src="img/underline.png" alt="">
 	<p class='default_p'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut<br> labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 	<div class="blog">
-		<div class="creative default_creative">
-			<img src="img/Creative.jpg" alt="" style='width: 300px; height: 240px;'>
+		<div class="blogs_item">
+			<div class="blogs_item__top">
+			<img src="img/Creative.jpg" alt="">
+		</div>
+		<div class="blogs_item__bottom">
 			<h3>Creat Creative & Clean</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
 		</div>
-		<div class="creative_1 default_creative">
-			<img src="img/sleek.png" alt="" style='width: 300px; height: 240px;'>
+		<div class="blogs_item">
+			<div class="blogs_item__top">
+			<img src="img/sleek.png" alt="">
+			</div>
+			<div class="blogs_item__bottom">
 			<h3>Make A Sleek Break</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 		</div>
-		<div class="creative_2 default_creative">
-			<img src="img/creative1.jpg" alt="" style='width: 300px; height: 240px;'>
+		</div>
+		<div class="blogs_item">
+			<div class="blogs_item__top">
+			<img src="img/creative1.jpg" alt="" class='creative_img'>
+		</div>
+		<div class="blogs_item__bottom">
 			<h3>Creative Manipulation</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		</div>
+		</div>
+		</div>
 		</div>
 	</div>
 </div>
 <div class="plan">
+	<div class="container">
+		<div class="plan_inner">
 	<div class="header_features">
 		<h1>chose plan</h1>
 		<img src="img/features_line.png" alt="">
@@ -274,6 +292,8 @@
 			</div>
 		</div>
 	</div>
+	</div>
+</div>
 </div>
 <div id="arrow_up"><img src="img/up-arrow.png" alt="Вверх" style='max-width: 60px'></div>
 </div>
