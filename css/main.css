@@ -813,10 +813,21 @@ a {
   .container {
     width: 480px;
   }
+  .header_logo h1 {
+    font-size: 24px;
+  }
+  .header_logo {
+    width: 50%;
+  }
+  .header-logo__img {
+    height: 45px;
+  }
   .header_menu {
     position: relative;
+    width: 50%;
   }
   .header_menu li a {
+    font-size: 18px;
     color: #686868;
     border: none;
   }
@@ -827,7 +838,7 @@ a {
   #menu, label:before, label:after {
     content: " ";
     position: absolute;
-    left: 100%;
+    right: 0;
     width: 30px;
     height: 3px;
     background-color: #686868;
@@ -860,22 +871,19 @@ a {
     pointer-events: none;
     opacity: 0;
   }
-  #menu-toggle {
-    width: 100px;
-  }
   #menu-toggle:checked + label:before {
     top: 50%;
-    left: 100%;
+    right: 0;
     transform: rotate(-45deg);
   }
   #menu-toggle:checked + label:after {
     top: 50%;
-    left: 100%;
+    right: 0;
     transform: rotate(45deg);
   }
   #menu-toggle:checked + label + #menu {
     top: 50%;
-    left: 45%;
+    left: 23%;
     width: 150px;
     height: auto;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
