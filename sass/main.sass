@@ -764,14 +764,19 @@ a
 		width: 480px
 	.header_menu
 		position: relative
+	.header_menu li a
+		color: #666666
+		display: block
+	.header_menu a:hover
+		background-color: #484848
 	
 	#menu, label:before, label:after 
 	    content: " "
 	    position: absolute
 	    left: 100%
-	    width: 40px
-	    height: 5px
-	    background-color: yellow
+	    width: 30px
+	    height: 3px
+	    background-color: #686868
 	    border-radius: 2px
 	    transition: .5s ease
 	    z-index: 100
@@ -784,22 +789,24 @@ a
 	    right: 0
 
 	label:before
-	  top: 50px
+	  top: 40%
 	label:after
-	  top: 70px
+	  top: 60%
 
 	#menu 
-	    top: 64px
-	    width: 40px
+	    top: 50%
+	    width: 30px
 	    transition: .2s ease
 	    z-index: 0
 	    right: 0
+	    flex-flow: column wrap
 
-	#menu li 
+	#menu li
 	    line-height: 0.5
 	    pointer-events: none
 	    opacity: 0
 
+	
 
 	#menu-toggle:checked + label:before 
 	    top: 50%
@@ -815,10 +822,11 @@ a
 	    top: 50%
 	    left: 50%
 	    width: 120px
-	    height: 200px
+	    height: auto
 	    box-shadow: 0 2px 5px rgba(0,0,0,0.26)
 	    transition: .3s ease .2s
 	    z-index: 1
+	    background-color: #333333
 
 	#menu-toggle:checked + label + #menu li 
 	    pointer-events: all
