@@ -809,9 +809,13 @@ a {
   .container {
     width: 480px;
   }
+  .header_menu {
+    position: relative;
+  }
   #menu, label:before, label:after {
     content: " ";
     position: absolute;
+    left: 100px;
     width: 40px;
     height: 5px;
     background-color: yellow;
@@ -869,6 +873,5 @@ a {
   }
   [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
     display: none;
-    position: absolute;
   }
 }

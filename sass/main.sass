@@ -759,11 +759,13 @@ a
 @media screen and (max-width: 768px)
 	.container
 		width: 480px
+	.header_menu
+		position: relative
 	
 	#menu, label:before, label:after 
 	    content: " "
 	    position: absolute
-
+	    left: 100px
 	    width: 40px
 	    height: 5px
 	    background-color: yellow
@@ -783,7 +785,7 @@ a
 	  top: 70px
 
 	#menu 
-	    top: 0
+	    top: 44px
 	    width: 40px
 	    transition: .2s ease
 	    z-index: 0
@@ -822,5 +824,5 @@ a
 
 
 	[type="checkbox"]:not(:checked), [type="checkbox"]:checked 
-	    display: block
-	    position: absolute
+	    display: none
+	    
