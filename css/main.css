@@ -817,11 +817,12 @@ a {
     position: relative;
   }
   .header_menu li a {
-    color: #666666;
-    display: block;
+    color: #686868;
+    border: none;
   }
   .header_menu a:hover {
-    background-color: #484848;
+    color: #000;
+    border: none;
   }
   #menu, label:before, label:after {
     content: " ";
@@ -859,6 +860,9 @@ a {
     pointer-events: none;
     opacity: 0;
   }
+  #menu-toggle {
+    width: 100px;
+  }
   #menu-toggle:checked + label:before {
     top: 50%;
     left: 100%;
@@ -871,13 +875,13 @@ a {
   }
   #menu-toggle:checked + label + #menu {
     top: 50%;
-    left: 50%;
-    width: 120px;
+    left: 45%;
+    width: 150px;
     height: auto;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
     transition: .3s ease .2s;
     z-index: 1;
-    background-color: #333333;
+    background-color: #EAEAEA;
   }
   #menu-toggle:checked + label + #menu li {
     pointer-events: all;
