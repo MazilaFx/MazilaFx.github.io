@@ -831,7 +831,7 @@ a {
     top: 70px;
   }
   #menu {
-    top: 0;
+    top: 44px;
     width: 40px;
     transition: .2s ease;
     z-index: 0;
