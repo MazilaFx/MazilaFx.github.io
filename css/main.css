@@ -1181,31 +1181,31 @@ a {
     justify-content: center;
   }
   .default_main {
-    min-width: 360px;
+    max-width: 360px;
   }
   .plan {
-    min-width: 360px;
+    max-width: 360px;
   }
   .features {
-    min-width: 360px;
+    max-width: 360px;
   }
   .main_watch {
-    min-width: 360px;
+    max-width: 360px;
   }
   .footer {
-    min-width: 360px;
+    max-width: 360px;
   }
   .gallery {
-    min-width: 360px;
+    max-width: 360px;
   }
   .clients {
-    min-width: 360px;
+    max-width: 360px;
   }
   .main_slider {
-    min-width: 360px;
+    max-width: 360px;
   }
   .header {
-    min-width: 340px;
+    max-width: 340px;
   }
   #menu-toggle:checked + label + #menu {
     top: 60%;
