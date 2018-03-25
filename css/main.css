@@ -295,7 +295,7 @@ a {
 
 .watch button {
   height: 36px;
-  min-width: 126px;
+  width: 140px;
   background-color: #E74C3D;
   border: none;
   box-shadow: 0 3px 2px  #B01001;
@@ -431,7 +431,7 @@ a {
 }
 
 .designer {
-  min-height: 400px;
+  height: 400px;
   width: 20%;
   margin-right: 3%;
   background-color: #EAEAEA;
@@ -470,9 +470,9 @@ a {
   justify-content: center;
   flex-flow: column wrap;
   max-width: 70%;
-  min-height: 400px;
+  height: 400px;
   background-color: #EAEAEA;
-  padding: 40px;
+  padding: 25px;
   box-sizing: border-box;
 }
 
@@ -692,7 +692,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 100%;
+  width: 100%;
   margin-top: 5%;
 }
 
@@ -807,11 +807,14 @@ a {
     width: 50%;
     height: 1px;
   }
+  .main_slider__top h1 {
+    font-size: 37px;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .container {
-    width: 480px;
+    width: 580px;
   }
   .header_logo h1 {
     font-size: 24px;
@@ -864,7 +867,7 @@ a {
     transition: .2s ease;
     z-index: 0;
     right: 0;
-    flex-flow: column wrap;
+    flex-flow: column;
   }
   #menu li {
     line-height: 0.5;
@@ -901,5 +904,317 @@ a {
   }
   [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
     display: none;
+  }
+  .my_skills {
+    height: 350px;
+    padding: 10px;
+  }
+  .my_skills p {
+    width: 100%;
+  }
+  .designer {
+    height: 350px;
+    width: 30%;
+  }
+  .default img {
+    width: 35%;
+  }
+  .basic {
+    width: 130px;
+  }
+  .example a {
+    font-size: 14.3px;
+  }
+  .blogs_item__top {
+    padding-bottom: 4%;
+  }
+  .blogs_item__bottom h3 {
+    padding: 4% 0;
+  }
+  .blogs_item {
+    height: 370px;
+    overflow: hidden;
+  }
+  #arrow_up img {
+    width: 48px;
+  }
+  .main_slider__top h1 {
+    font-size: 29.3px;
+  }
+  .main_slider__top h2 {
+    font-size: 24px;
+  }
+  .default_prices {
+    width: 130px;
+  }
+}
+
+@media screen and (max-width: 608px) {
+  .container {
+    width: 480px;
+  }
+  .my_skills {
+    padding: 10px;
+  }
+  .feature_item_title {
+    font-size: 14px;
+  }
+  .sponsors span {
+    font-size: 20px;
+    padding: 0;
+  }
+  .default {
+    height: 5%;
+    font-size: 12px;
+    text-align: center;
+  }
+  .my_skills {
+    width: 100%;
+    height: 300px;
+  }
+  .designer {
+    width: 40%;
+    height: 300px;
+  }
+  .default {
+    font-size: 12px;
+  }
+  .default img {
+    width: 30%;
+  }
+  .ph img {
+    padding-left: 22px;
+  }
+  .il img {
+    padding-left: 15px;
+  }
+  .sk img {
+    padding-left: 50px;
+  }
+  .af img {
+    padding-left: 2px;
+  }
+  .default b {
+    padding-left: 10px;
+  }
+  .sk b {
+    padding-left: 10px;
+  }
+  .il b {
+    padding-left: 10px;
+  }
+  .ph b {
+    padding-left: 10px;
+  }
+  .section_item__top img {
+    height: 55px;
+  }
+  .section_item:last-child img {
+    height: 40px;
+  }
+  .section_item__bottom h2 {
+    font-size: 17px;
+  }
+  .section_item__bottom p {
+    font-size: 15.4px;
+  }
+  #menu-toggle:checked + label + #menu {
+    top: 60%;
+    left: 30%;
+    width: 130px;
+    height: auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+    transition: .3s ease .2s;
+    z-index: 1;
+    background-color: #EAEAEA;
+  }
+  .basic {
+    width: 100%;
+  }
+  .default_prices {
+    width: 100%;
+  }
+  .default_prices h4 {
+    font-size: 12px;
+  }
+  .default_prices h3 {
+    font-size: 19px;
+  }
+  .default_prices p {
+    font-size: 13px;
+  }
+  .purchase {
+    width: 100%;
+  }
+  .purchase span {
+    font-size: 12px;
+  }
+  .blogs_item__bottom h3 {
+    font-size: 18px;
+    text-align: center;
+  }
+  .blogs_item__top {
+    height: 50%;
+  }
+  .blogs_item__bottom p {
+    font-size: 16px;
+  }
+  .blogs_item__bottom {
+    height: 50%;
+  }
+}
+
+@media screen and (max-width: 504px) {
+  .default_prices {
+    width: 100px;
+  }
+  .basic {
+    width: 100px;
+  }
+  .plan {
+    min-width: 500px;
+  }
+  .features {
+    min-width: 500px;
+  }
+  .main_watch {
+    min-width: 500px;
+  }
+  .footer {
+    min-width: 500px;
+  }
+  .gallery {
+    min-width: 500px;
+  }
+  .clients {
+    min-width: 500px;
+  }
+  .main_slider {
+    min-width: 500px;
+  }
+  .header {
+    min-width: 480px;
+  }
+  .default_main {
+    min-width: 500px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .container {
+    width: 320px;
+  }
+  .default_prices {
+    width: 80px;
+  }
+  .basic {
+    width: 80px;
+  }
+  .gallery img {
+    height: 175px;
+  }
+  .example ul li {
+    padding: 0 0 0 0.2px;
+  }
+  .example a {
+    font-size: 12px;
+  }
+  .sponsors span {
+    font-size: 14px;
+  }
+  .sum46 {
+    padding: 11% 0;
+  }
+  .blogs_item__top img {
+    height: 180px;
+  }
+  .blogs_item__top {
+    height: 50%;
+  }
+  .blogs_item__bottom {
+    height: 47%;
+  }
+  .blogs_item__bottom h3 {
+    font-size: 15px;
+    text-align: center;
+  }
+  .blogs_item__bottom p {
+    font-size: 13px;
+  }
+  .default_prices h4 {
+    font-size: 10px;
+  }
+  .main_slider__top {
+    height: 350px;
+  }
+  .main_slider__top h1 {
+    font-size: 22px;
+  }
+  .main_slider__top h2 {
+    font-size: 19px;
+  }
+  .main_slider__bottom img {
+    height: 35px;
+  }
+  .watch {
+    width: 55%;
+  }
+  .plan {
+    height: 500px;
+  }
+  .watch p {
+    font-size: 14px;
+  }
+  .watch h1 {
+    font-size: 20.5px;
+  }
+  .watch button {
+    width: 100px;
+  }
+  .default_prices p {
+    font-size: 10.5px;
+  }
+  .purchase span {
+    font-size: 12px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+  }
+  .default_main {
+    min-width: 360px;
+  }
+  .plan {
+    min-width: 360px;
+  }
+  .features {
+    min-width: 360px;
+  }
+  .main_watch {
+    min-width: 360px;
+  }
+  .footer {
+    min-width: 360px;
+  }
+  .gallery {
+    min-width: 360px;
+  }
+  .clients {
+    min-width: 360px;
+  }
+  .main_slider {
+    min-width: 360px;
+  }
+  .header {
+    min-width: 340px;
+  }
+  #menu-toggle:checked + label + #menu {
+    top: 60%;
+    left: 0;
+    width: 130px;
+    height: auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+    transition: .3s ease .2s;
+    z-index: 1;
+    background-color: #EAEAEA;
   }
 }
