@@ -8,7 +8,8 @@
 		<link rel="stylesheet" href="css/main.css">
 		<script src='jquery-3.3.1.min.js'></script>
 		<script src='js/script.js'></script>
-		
+		<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>');
+		</script>
 	</head>
 	<body>
 		<header class='header'>
@@ -147,12 +148,42 @@
 					<a href="#"><img src="img/social_3.png" alt="" class='social'></a>
 				</div>
 				<div class="my_skills">
-					<h3>my skills</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.nsectetur adipisicing elit, sed do eiusmod tempor.</p>
-					<div class='ph default'>photoshop <img src="img/photoshop.png" alt=""><b>88%</b></div>
-					<div class='il default'>illustrator <img src="img/illustrator.png" alt=""><b>92%</b></div>
-					<div class='sk default'>sketch <img src="img/sketch.png" alt=""><b>90%</b></div>
-					<div class='af default'>after effects <img src="img/after-effects.png" alt=""><b>98%</div>
+					<div class="my-skills__title">
+						<h3>my skills</h3>
+					</div>
+					<div class="my-skills__description">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.nsectetur adipisicing elit, sed do eiusmod tempor.</p>
+					</div>
+					<div class="my-skills_wraper">
+						<div class="skill-wraper">
+							<span class='skill_name'>Photoshop</span>
+							<div class='meter'>
+								<span class="meter_color" style='width: 98%'> </span>
+							</div>
+							<span class='skill_progress'>98%</span>
+						</div>
+						<div class="skill-wraper">
+							<span class='skill_name'>ilustrator</span>
+							<div class='meter'>
+								<span class="meter_color" style='width: 92%'> </span>
+							</div>
+							<span class='skill_progress'>92%</span>
+						</div>
+						<div class="skill-wraper">
+							<span class='skill_name'>Sketch</span>
+							<div class='meter'>
+								<span class="meter_color" style='width: 90%'> </span>
+							</div>
+							<span class='skill_progress'>90%</span>
+						</div>
+						<div class="skill-wraper">
+							<span class='skill_name'>effects</span>
+							<div class='meter'>
+								<span class="meter_color" style='width: 88%'> </span>
+							</div>
+							<span class='skill_progress'>88%</span>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -247,71 +278,71 @@
 				<h1>chose plan</h1>
 				<img src="img/features_line.png" alt="">
 			</div>
-				<div class="plans">
-					<div class="plan__item">
-						<div class="plan__title">
-							<div class="plan-title__name">Basic</div>
-							<div class="plan-title__price">Free</div>
-						</div>
-						<div class="plan__info">
-							<div class='defaul_margin__top'>20 Pages</div>
-							<div>2 GB Storage</div>
-							<div>150 members</div>
-							<div>2 Contributors</div>
-							<div class="plan-info__purchase">
-								<button><span>Purchase</span></button>
-							</div>
+			<div class="plans">
+				<div class="plan__item">
+					<div class="plan__title">
+						<div class="plan-title__name">Basic</div>
+						<div class="plan-title__price">Free</div>
+					</div>
+					<div class="plan__info">
+						<div class='defaul_margin__top'>20 Pages</div>
+						<div>2 GB Storage</div>
+						<div>150 members</div>
+						<div>2 Contributors</div>
+						<div class="plan-info__purchase">
+							<button><span>Purchase</span></button>
 						</div>
 					</div>
-					<div class="plan__item">
-						<div class="plan__title">
-							<div class="plan-title__name">STANDART</div>
-							<div class="plan-title__price">$24.00</div>
-						</div>
-						<div class="plan__info plan_info__orange">
-							<div class='defaul_margin__top'><span>25</span> Pages</div>
-							<div><span>10</span> GB Storage</div>
-							<div><span>300</span> members</div>
-							<div><span>5</span> Contributors</div>
-							<div class="plan-info__purchase">
-								<button><span>Purchase</span></button>
-							</div>
+				</div>
+				<div class="plan__item">
+					<div class="plan__title">
+						<div class="plan-title__name">STANDART</div>
+						<div class="plan-title__price">$24.00</div>
+					</div>
+					<div class="plan__info plan_info__orange">
+						<div class='defaul_margin__top'><span>25</span> Pages</div>
+						<div><span>10</span> GB Storage</div>
+						<div><span>300</span> members</div>
+						<div><span>5</span> Contributors</div>
+						<div class="plan-info__purchase">
+							<button><span>Purchase</span></button>
 						</div>
 					</div>
-					<div class="plan__item">
-						<div class="plan__title">
-							<div class="plan-title__name">PREMIUM</div>
-							<div class="plan-title__price">$40.00</div>
-						</div>
-						<div class="plan__info">
-							<div class='defaul_margin__top'>30 Pages</div>
-							<div>20 GB Storage</div>
-							<div>500 members</div>
-							<div>10 Contributors</div>
-							<div class="plan-info__purchase">
-								<button><span>Purchase</span></button>
-							</div>
+				</div>
+				<div class="plan__item">
+					<div class="plan__title">
+						<div class="plan-title__name">PREMIUM</div>
+						<div class="plan-title__price">$40.00</div>
+					</div>
+					<div class="plan__info">
+						<div class='defaul_margin__top'>30 Pages</div>
+						<div>20 GB Storage</div>
+						<div>500 members</div>
+						<div>10 Contributors</div>
+						<div class="plan-info__purchase">
+							<button><span>Purchase</span></button>
 						</div>
 					</div>
-					<div class="plan__item">
-						<div class="plan__title">
-							<div class="plan-title__name">PROFESSIONAL</div>
-							<div class="plan-title__price">$75.00</div>
-						</div>
-						<div class="plan__info">
-							<div class='defaul_margin__top'>40 Pages</div>
-							<div>40 GB Storage</div>
-							<div>1000 members</div>
-							<div>20 Contributors</div>
-							<div class="plan-info__purchase">
-								<button><span>Purchase</span></button>
-							</div>
+				</div>
+				<div class="plan__item">
+					<div class="plan__title">
+						<div class="plan-title__name">PROFESSIONAL</div>
+						<div class="plan-title__price">$75.00</div>
+					</div>
+					<div class="plan__info">
+						<div class='defaul_margin__top'>40 Pages</div>
+						<div>40 GB Storage</div>
+						<div>1000 members</div>
+						<div>20 Contributors</div>
+						<div class="plan-info__purchase">
+							<button><span>Purchase</span></button>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+</div>
 </div>
 <div id="arrow_up"><img src="img/up-arrow.png" alt="Вверх" style='max-width: 60px'></div>
 </div>
