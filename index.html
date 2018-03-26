@@ -8,7 +8,8 @@
 		<link rel="stylesheet" href="css/main.css">
 		<script src='jquery-3.3.1.min.js'></script>
 		<script src='js/script.js'></script>
-		
+		<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>');
+  </script>
 	</head>
 	<body>
 		<header class='header'>
@@ -247,49 +248,66 @@
 				<h1>chose plan</h1>
 				<img src="img/features_line.png" alt="">
 			</div>
-			<div class="default_price">
-				<div class="default_prices">
-					<h4>basic</h4>
-					<h3>Free</h3>
-					<div class="basic">
-						<p class='first_p'><span class="number">20</span> Pages</p><br>
-						<p><span class="number">2</span> GB Storage</p><br>
-						<p><span class="number">150</span> members</p><br>
-						<p><span class="number">2</span> Contributors</p>
-						<button class="purchase"><span>purchase</span></button>
+				<div class="plans">
+					<div class="plan__item">
+						<div class="plan__title">
+							<div class="plan-title__name">Basic</div>
+							<div class="plan-title__price">Free</div>
+						</div>
+						<div class="plan__info">
+							<div class='defaul_margin__top'>20 Pages</div>
+							<div>2 GB Storage</div>
+							<div>150 members</div>
+							<div>2 Contributors</div>
+							<div class="plan-info__purchase">
+								<button><span>Purchase</span></button>
+							</div>
+						</div>
 					</div>
-				</div>
-				<div class=" default_prices">
-					<h4>standart</h4>
-					<h3>$24.00</h3>
-					<div class="basic standart">
-						<p class='first_p'><span class="number number_orange">25</span> Pages</p><br>
-						<p><span class="number number_orange">10</span> GB Storage</p><br>
-						<p><span class="number number_orange">300</span> members</p><br>
-						<p><span class="number number_orange">5</span> Contributors</p>
-						<button class="purchase"><span>purchase</span></button>
+					<div class="plan__item">
+						<div class="plan__title">
+							<div class="plan-title__name">STANDART</div>
+							<div class="plan-title__price">$24.00</div>
+						</div>
+						<div class="plan__info plan_info__orange">
+							<div class='defaul_margin__top'><span>25</span> Pages</div>
+							<div><span>10</span> GB Storage</div>
+							<div><span>300</span> members</div>
+							<div><span>5</span> Contributors</div>
+							<div class="plan-info__purchase">
+								<button><span>Purchase</span></button>
+							</div>
+						</div>
 					</div>
-				</div>
-				<div class="premium default_prices">
-					<h4>premium</h4>
-					<h3>$40.00</h3>
-					<div class="basic">
-						<p class='first_p'><span class="number">30</span> Pages</p><br>
-						<p><span class="number">20</span> GB Storage</p><br>
-						<p><span class="number">500</span> members</p><br>
-						<p><span class="number">10</span> Contributors</p>
-						<button class="purchase"><span>purchase</span></button>
+					<div class="plan__item">
+						<div class="plan__title">
+							<div class="plan-title__name">PREMIUM</div>
+							<div class="plan-title__price">$40.00</div>
+						</div>
+						<div class="plan__info">
+							<div class='defaul_margin__top'>30 Pages</div>
+							<div>20 GB Storage</div>
+							<div>500 members</div>
+							<div>10 Contributors</div>
+							<div class="plan-info__purchase">
+								<button><span>Purchase</span></button>
+							</div>
+						</div>
 					</div>
-				</div>
-				<div class="professional default_prices">
-					<h4>professional</h4>
-					<h3>$75.00</h3>
-					<div class="basic">
-						<p class='first_p'><span class="number">40</span> Pages</p><br>
-						<p><span class="number">40</span> GB Storage</p><br>
-						<p><span class="number">1000</span> members</p><br>
-						<p><span class="number">20</span> Contributors</p>
-						<button class="purchase"><span>purchase</span></button>
+					<div class="plan__item">
+						<div class="plan__title">
+							<div class="plan-title__name">PROFESSIONAL</div>
+							<div class="plan-title__price">$75.00</div>
+						</div>
+						<div class="plan__info">
+							<div class='defaul_margin__top'>40 Pages</div>
+							<div>40 GB Storage</div>
+							<div>1000 members</div>
+							<div>20 Contributors</div>
+							<div class="plan-info__purchase">
+								<button><span>Purchase</span></button>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

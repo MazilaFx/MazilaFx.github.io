@@ -20,7 +20,8 @@ html
 
 [type="checkbox"]:not(:checked), [type="checkbox"]:checked 
 	    display: none
-	    
+
+
 
 h1
   font-size: 2.4rem
@@ -654,61 +655,84 @@ a
 	justify-content: center
 	flex: auto
 	height: 100%
-	
-.default_price
+
+.header_features
+	margin-bottom: 60px
+
+.plans
 	display: flex
-	justify-content: center
-	align-items: center
-	width: 100%
-	margin-top: 5%
+.defaul_margin__top
+	margin-top: 40px
 
-.default_prices
-	margin-left: 1%
-	text-align: center
-	width: 260px
-	background-color: #0D1215
-
-.default_prices h3
-	color: #FFFFFF
-	font-size: 34px
-	margin-top: 2%
-
-.default_prices h4
-	color: #FFFFFF
-	font-size: 16px
-	text-transform: uppercase
-	margin-top: 10%
-
-.basic
-	max-height: 327.5px
-	background-color: #1E272B
-
-.first_p
-	padding-top: 15%
-
-.number
- 	color: #FFFFFF
-
-.basic p
-	color: #DEDFDF
-	margin-top: 7%
-
-.number_orange
-	color: #D66745
-
-.purchase
-	font-size: 14px
-	padding: 8px 20px 8px 20px
-	margin: 10% 0
-	text-transform: uppercase
-	color: #FCE7E2
+.plan-info__purchase button
+	padding: 8px 20px
+	margin: 45px 0
 	background-color: #F5734B
 	border: none
 	border-radius: 3px
 
-.basic button:hover
-	box-shadow: 1px 4px 10px yellow
+
+.plan-info__purchase button:hover
+	box-shadow: 1px 2px 9px yellow
 	cursor: pointer
+
+.plan-info__purchase button span
+	font-size: 14px
+	color: #FCE7E2
+	text-transform: uppercase
+
+.plan__title
+	background: #0e1316
+
+.plan__item
+	width: 300px
+	display: inline-flex
+	flex-flow: column wrap
+	margin: 0 1% 0 0
+	
+	
+
+.plan__item:hover
+	box-shadow: 0 0 0 1px #F5734B
+	
+
+.plan__info
+	text-align: center
+	background: #1f282c
+	overflow: hidden
+.plan__info div
+	font-size: 18px
+	padding: 12px 0
+	color: #DEDFDF
+
+.plan_info__orange span
+	color: #D66745
+
+.plan-title__name
+	color: #fff
+	font-size: 18px
+	padding: 43px 0 10px 0
+	text-align: center
+
+.plan-title__price
+	color: #fff
+	font-size: 34px
+	padding: 0 85px 39px 85px
+	text-align: center
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .footer
 	height: 210px
@@ -976,23 +1000,23 @@ a
 	.basic
 		width: 100px
 	.plan
-		min-width: 500px
+		max-width: 500px
 	.features
-		min-width: 500px
+		max-width: 500px
 	.main_watch
-		min-width: 500px
+		max-width: 500px
 	.footer
-		min-width: 500px
+		max-width: 500px
 	.gallery
-		min-width: 500px
+		max-width: 500px
 	.clients
-		min-width: 500px
+		max-width: 500px
 	.main_slider
-		min-width: 500px
+		max-width: 500px
 	.header
-		min-width: 480px
+		max-width: 480px
 	.default_main
-		min-width: 500px
+		max-width: 500px
 	
 @media screen and (max-width: 360px)
 	.container
@@ -1050,21 +1074,21 @@ a
 		display: flex
 		justify-content: center
 	.default_main
-		max-width: 360px
+		max-width: 320px
 	.plan
-		max-width: 360px
+		min-width: 320px
 	.features
-		max-width: 360px
+		max-width: 320px
 	.main_watch
-		max-width: 360px
+		min-width: 320px
 	.footer
-		max-width: 360px
+		max-width: 320px
 	.gallery
-		max-width: 360px
+		max-width: 320px
 	.clients
-		max-width: 360px
+		max-width: 320px
 	.main_slider
-		max-width: 360px
+		min-width: 320px
 	.header
 		max-width: 340px
 	#menu-toggle:checked + label + #menu 
