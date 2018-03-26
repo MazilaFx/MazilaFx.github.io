@@ -23,6 +23,10 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 
+.section {
+  padding: 50px 0;
+}
+
 [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
   display: none;
 }
@@ -140,6 +144,7 @@ a {
   -webkit-box-flex: 1;
   -ms-flex: auto;
   flex: auto;
+  height: 100%;
 }
 
 .main_slider {
@@ -147,7 +152,6 @@ a {
   display: -ms-flexbox;
   display: flex;
   background-color: #343434;
-  height: 500px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -168,7 +172,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 75%;
+  margin-bottom: 200px;
 }
 
 .main_slider__bottom {
@@ -182,7 +186,6 @@ a {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  height: 25%;
 }
 
 .main_slider h1 {
@@ -403,7 +406,7 @@ a {
 
 .watch button {
   height: 36px;
-  width: 140px;
+  padding: 0 20px;
   background-color: #E74C3D;
   border: none;
   -webkit-box-shadow: 0 3px 2px  #B01001;
@@ -954,7 +957,16 @@ a {
 }
 
 .plan {
-  height: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 800px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-color: #161E22;
 }
 
@@ -987,6 +999,10 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 1240px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .defaul_margin__top {
@@ -1026,7 +1042,6 @@ a {
   -webkit-box-direction: normal;
   -ms-flex-flow: column wrap;
   flex-flow: column wrap;
-  margin: 0 1% 0 0;
 }
 
 .plan__item:hover {
@@ -1388,42 +1403,6 @@ a {
   }
   .blogs_item__bottom {
     height: 50%;
-  }
-}
-
-@media screen and (max-width: 504px) {
-  .default_prices {
-    width: 100px;
-  }
-  .basic {
-    width: 100px;
-  }
-  .plan {
-    max-width: 500px;
-  }
-  .features {
-    max-width: 500px;
-  }
-  .main_watch {
-    max-width: 500px;
-  }
-  .footer {
-    max-width: 500px;
-  }
-  .gallery {
-    max-width: 500px;
-  }
-  .clients {
-    max-width: 500px;
-  }
-  .main_slider {
-    max-width: 500px;
-  }
-  .header {
-    max-width: 480px;
-  }
-  .default_main {
-    max-width: 500px;
   }
 }
 
