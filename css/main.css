@@ -405,12 +405,11 @@ a {
 }
 
 .watch button {
-  height: 36px;
   padding: 0 20px;
   background-color: #E74C3D;
   border: none;
-  -webkit-box-shadow: 0 3px 2px  #B01001;
-  box-shadow: 0 3px 2px  #B01001;
+  -webkit-box-shadow: 0 3px 2px #B01001;
+  box-shadow: 0 3px 2px #B01001;
 }
 
 .watch button:hover {
@@ -425,6 +424,9 @@ a {
   font-size: 14px;
   text-transform: uppercase;
   font-weight: bold;
+  line-height: 2.4;
+  font-size: 1rem;
+  overflow-wrap: normal;
 }
 
 .our_works {
