@@ -3,6 +3,7 @@ $(document).ready(function(){
 	$(window).scroll(function(){
 		if($(this).scrollTop() > 120){
 			$('#arrow_up').fadeIn();
+			$('#arrow_up').css('display', 'flex');
 		}else{
 		$('#arrow_up').fadeOut();
 		}
