@@ -1401,9 +1401,7 @@ a {
 
 @media screen and (max-width: 1300px) {
   .plans {
-    width: 800px;
-    -ms-flex-flow: wrap;
-    flex-flow: wrap;
+    width: 900px;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -1411,6 +1409,22 @@ a {
   .plan__item {
     width: 260px;
     margin: 10px;
+  }
+}
+
+@media screen and (max-width: 1119px) {
+  .plans {
+    -ms-flex-flow: wrap;
+    flex-flow: wrap;
+  }
+  .plan__item {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 903px) {
+  .plans {
+    width: 600px;
   }
 }
 
@@ -1424,11 +1438,8 @@ a {
   .gallery {
     height: 550px;
   }
-  .plans {
-    width: 600px;
-  }
   .plan__item {
-    width: 260px;
+    width: 300px;
   }
 }
 
