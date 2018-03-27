@@ -1551,7 +1551,7 @@ a {
   }
   .section_item {
     width: 100%;
-    min-height: 200px;
+    height: 200px;
     margin-bottom: 20px;
   }
   .sections {
