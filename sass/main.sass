@@ -17,6 +17,8 @@ html
     height: 100%
     -webkit-font-smoothing: antialiased
 
+.section
+	padding: 50px 0
 
 [type="checkbox"]:not(:checked), [type="checkbox"]:checked 
 	    display: none
@@ -29,6 +31,7 @@ h1
   color: #686868
   text-transform: uppercase
   font-weight: bold
+  text-align: center
 
 .container
 	display: flex
@@ -41,9 +44,6 @@ h1
 
 a 
 	text-decoration: none
-
-
-
 
 
 .header
@@ -103,12 +103,13 @@ a
 	flex-flow: column wrap
 	align-items: center
 	flex: auto
+	height: 100%
 
 
 .main_slider
+	
 	display: flex
 	background-color: #343434
-	height: 500px
 	align-items: center
 	justify-content: center
 	text-align: center
@@ -118,13 +119,12 @@ a
 	flex-flow: column wrap
 	justify-content: center
 	display: flex
-	height: 75%
+	margin-bottom: 200px
 
 .main_slider__bottom
 	display: flex
 	flex-flow: column wrap
 	justify-content: center
-	height: 25%
 
 .main_slider  h1
 	font-size: 50px
@@ -146,7 +146,6 @@ a
 	text-align: center
 
 .default_main
-    height: 500px
     display: flex
     flex-flow: column wrap
     justify-content: center
@@ -161,8 +160,7 @@ a
 	flex: auto
 	height: 100%
 
-.about_us
-	height: 700px
+
 
 .default_main p 
 	font-family: 'RobotoThin'
@@ -255,7 +253,8 @@ a
 	background-size: cover
 
 .watch
-	padding: 0 1%
+	padding: 1%
+	box-sizing: border-box
 	width: 50%
 	display: flex
 	flex-flow: wrap column
@@ -274,31 +273,34 @@ a
 	margin: 0 0 5% 0
 	color: #434647
 
-.watch button
-	height: 36px
-	width: 140px
-	background-color: #E74C3D
-	border: none
-	box-shadow: 0 3px 2px  #B01001
+.watch button 
+    padding: 0 20px
+    background-color: #E74C3D
+    border: none
+    -webkit-box-shadow: 0 3px 2px #B01001
+    box-shadow: 0 3px 2px #B01001
+
 
 .watch button:hover
 	background-color: #E66256
 	transition: 1s
 	cursor: pointer
 
+.watch button span 
+    color: #E5E5E5
+    font-size: 14px
+    text-transform: uppercase
+    font-weight: bold
+    line-height: 2.4
+    font-size: 1rem
+    overflow-wrap: normal
 
-.watch button span
-	color: #E5E5E5
-	font-size: 14px
-	text-transform: uppercase
-	font-weight: bold
 
 
 	
 
 
 .our_works
-	height: 350px
 	display: flex
 	align-items: center
 	justify-content: center
@@ -330,31 +332,35 @@ a
 	justify-content: center
 
 
-.example
+.tabs
 	width: 100%
+	display: flex
+	flex-flow: column wrap
+	justify-content: center
 
 
 	
 
 
 
-.example a:hover
+.tabs a:hover
 	border-bottom: 1px solid #F5734C
 	color: #333333
 
-    
-  
+.tabs ul
+	text-align: center
+	padding: 0 0 40px 0
 
 
  
-.example ul li
+.tabs ul li
 	display: inline-block
 	text-align: center
-	padding: 0 2.55% 0 2.55%
+	padding: 0  10px  
 
 	
 
-.example a
+.tabs a
 	color:  #727272
 	text-transform: uppercase
 	font-size: 17px
@@ -362,13 +368,37 @@ a
 
 
 .gallery
+	height: 700px
 	display: flex 
 	flex-wrap: wrap
 	justify-content: center
+	overflow: hidden
 
 .gallery img
 	width: 33.31%
-	height: 300px
+	height: 50%
+
+.tabs_projects
+	height: 100%
+	width: 100%
+	display: flex
+	flex-flow: column wrap
+
+.hidden
+	display: none
+
+.active
+	display: flex
+
+.prod-corp
+	display: flex
+	flex-flow: column wrap
+	height: 100%
+
+.tabs_projects img
+	width: 33.33%
+	height: 50%
+
 
 .clients
 	display: flex
@@ -406,10 +436,11 @@ a
 	max-width: 100%
 	justify-content: center
 	align-items: center
+	overflow: hidden
 
 .who_we_are
 	display: flex
-	height: 900px
+	flex-flow: column wrap
 
 .designer
 	height: 400px
@@ -444,6 +475,7 @@ a
   width: 60%
 
 .my-skills_wraper
+	width: 100%
 	display: flex
 	flex-flow: column wrap
 	justify-content: space-between
@@ -474,7 +506,7 @@ a
 .my_skills
 	display: flex
 	justify-content: center
-	flex-flow: column wrap
+	flex-flow:  wrap
 	width: 70%
 	height: 400px
 	background-color: #EAEAEA
@@ -529,7 +561,6 @@ a
 
 
 .features
-	height: 400px
 	background-color: #161E22
 
 .features__inner
@@ -598,8 +629,8 @@ a
 
 
 
-.blogs
-	height: 900px
+
+	
 
 .blogs_inner
 	display: flex
@@ -613,7 +644,7 @@ a
 	display: inline-block
 	background-color: #EAEAEA
 	width: 32%
-	height: 100%
+	height: 400px
 
 
 .blogs_item__top
@@ -628,7 +659,7 @@ a
 	align-items: center
 	justify-content: center
 	flex-flow:  wrap
-	height: 35%
+	height: 30%
 	overflow: hidden
 
 .blogs_item__top img
@@ -671,7 +702,9 @@ a
 
 
 .plan
-	height: 700px
+	display: flex
+	justify-content: center
+	align-items: center
 	background-color: #161E22
 	
 .plan_inner
@@ -688,6 +721,8 @@ a
 
 .plans
 	display: flex
+	width: 1240px
+	justify-content: space-between
 .defaul_margin__top
 	margin-top: 40px
 
@@ -715,7 +750,6 @@ a
 	width: 300px
 	display: inline-flex
 	flex-flow: column wrap
-	margin: 0 1% 0 0
 	
 	
 
@@ -788,9 +822,13 @@ a
 
 
 #arrow_up
-	display: none
-	padding: 2px 1px 1px 1px 
+	display: none 
 	position: fixed
+	flex-flow: column wrap
+	height: 60px
+	width: 60px
+	align-items: center
+	justify-content: center
 	bottom: 20px
 	right: 30px
 	background-color: #D0D0D0
@@ -907,9 +945,9 @@ a
 	.my_skills
 		height: 350px
 		padding: 10px
-
-	.my_skills p
 		width: 100%
+
+	
 	.designer
 		height: 350px
 		width: 30%
@@ -917,7 +955,7 @@ a
 		width: 35%
 	.basic
 		width: 130px
-	.example a
+	.tabs a
 		font-size: 14.3px
 	.blogs_item__top
 		padding-bottom: 4%
@@ -935,12 +973,32 @@ a
 	.default_prices
 		width: 130px
 
+@media screen and (max-width: 1300px)
+	.plans
+		width: 800px
+		flex-flow:  wrap
+		justify-content: center
+	.plan__item
+		margin: 10px
+
+@media screen and (max-width: 1024px)
+	.skill_name
+		width: 45%
+@media screen and (max-width: 799px)
+	.gallery
+		height: 550px
+	.plans
+		width: 600px
+
+	.plan__item
+		width: 260px
+
 @media screen and (max-width: 608px)
 	.container
 		width: 480px
-	.my_skills
-		padding: 10px
-		width: 100%
+	.skill_name
+		width: 70%
+	
 	.feature_item_title
 		font-size: 14px
 	
@@ -953,28 +1011,12 @@ a
 		height: 5%
 		font-size: 12px
 		text-align: center
-	.designer
-		width: 40%
-		height: 300px
+	
 	.default
 		font-size: 12px
 	.default img
 		width: 30%
-	.ph img
-		padding-left: 22px
-	.il img
-		padding-left: 15px
-	.sk img
-		padding-left: 50px
-	.af img
-		padding-left: 2px
-	.default b
-		padding-left: 10px
-	.sk b
-		padding-left: 10px
-	.il b
-		padding-left: 10px
-	.ph b
+	
 		padding-left: 10px
 	.section_item__top img
 		height: 55px
@@ -1018,104 +1060,43 @@ a
 	.blogs_item__bottom
 		height: 50%
 
-
-@media screen and (max-width: 504px)
-	.default_prices
-		width: 100px
-	.basic
-		width: 100px
-	.plan
-		max-width: 500px
-	.features
-		max-width: 500px
-	.main_watch
-		max-width: 500px
-	.footer
-		max-width: 500px
-	.gallery
-		max-width: 500px
-	.clients
-		max-width: 500px
-	.main_slider
-		max-width: 500px
-	.header
-		max-width: 480px
-	.default_main
-		max-width: 500px
+@media screen and (max-width: 599px)
+	.plans
+		width: 300px
 	
-@media screen and (max-width: 360px)
+@media screen and (max-width: 509px)
 	.container
 		width: 320px
-	.default_prices
-		width: 80px
-	.basic
-		width: 80px
-	.gallery img
-		height: 175px
-	.example ul li
-		padding: 0 0 0 0.2px
-	.example a
-		font-size: 12px
-	.sponsors span
-		font-size: 14px
-	.sum46
-		padding: 10.9% 0
-	.blogs_item__top img
-		height: 180px
-	.blogs_item__top
-		height: 50%
-	.blogs_item__bottom
-		height: 47%
-	.blogs_item__bottom h3
-		font-size: 15px
-		text-align: center
-	.blogs_item__bottom p
-		font-size: 13px
-	.default_prices h4
-		font-size: 10px
-	.main_slider__top
-		height: 350px
-	.main_slider__top h1
-		font-size: 22px
-	.main_slider__top h2
-		font-size: 19px
-	.main_slider__bottom img
-		height: 35px
-	.watch
-		width: 55%
-	.plan
-		height: 500px
-	.watch p
-		font-size: 14px
-	.watch h1
-		font-size: 20.5px
-	.watch button
-		width: 100px
-	.default_prices p
-		font-size: 10.5px
-	.purchase span
-		font-size: 12px
-		text-align: left
-		display: flex
-		justify-content: center
-	.default_main
-		max-width: 320px
-	.plan
-		min-width: 320px
-	.features
-		max-width: 320px
-	.main_watch
-		min-width: 320px
-	.footer
-		max-width: 320px
 	.gallery
-		max-width: 320px
-	.clients
-		max-width: 320px
-	.main_slider
-		min-width: 320px
-	.header
-		max-width: 340px
+		height: 300px
+	.designer
+		height: 350px
+	.img_designer
+		width: 80%
+	.section_item
+		width: 100%
+		min-height: 200px
+		padding: 10px 0
+		margin-bottom: 20px
+	.sections
+		height: auto
+	.blog
+		height: auto
+		flex-flow: column
+	.blogs_item__top img
+		height: 110%
+	.blogs_item__bottom p
+		padding: 0 1px
+
+	.blogs_item
+		width: 100%
+		min-height: 200px
+		padding: 10px 0
+		margin-bottom: 20px
+	.skills
+		height: auto
+		flex-flow: column
+
 	#menu-toggle:checked + label + #menu 
 	    top: 60%
 	    left: 0
@@ -1125,4 +1106,13 @@ a
 	    transition: .3s ease .2s
 	    z-index: 1
 	    background-color: #EAEAEA
+		
+	
+@media screen and (max-width: 320px)
+
+	.container
+		width: 280px
+	
+	
+	
 
