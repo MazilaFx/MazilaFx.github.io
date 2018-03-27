@@ -591,8 +591,8 @@ a {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  height: 200px;
   background-color: #1B1B1B;
+  padding: 20px 0;
 }
 
 .clients__inner {
@@ -1635,13 +1635,19 @@ a {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 20px;
   }
-  .sponsor__title {
-    width: 123px;
+  .sponsor__item:last-child {
+    margin: 0;
   }
-  .sponsor__img {
-    height: 100%;
-    width: 100%;
+  .tabs ul li a {
+    font-size: 12px;
+  }
+  .tabs ul li {
+    padding: 0 0.1px;
   }
   #menu-toggle:checked + label + #menu {
     top: 60%;
