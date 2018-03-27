@@ -136,6 +136,9 @@ a
 	color: #676767
 	text-align: center
 
+
+
+
 .flex-grow1
 	display: flex
 	flex-grow: 1
@@ -407,6 +410,30 @@ a
 	height: 200px
 	background-color: #1B1B1B
 
+.clients__inner
+	display: flex
+	flex-flow: column wrap
+	align-items: center
+	justify-content: center
+	flex: auto
+	height: 100%
+
+.sponsor__list
+	display: flex
+	width: 70%
+	justify-content: space-between
+.sponsor__item
+	display: flex
+	flex-flow:  wrap
+	align-items: center
+
+.sponsor__title
+	font-size: 24px
+	padding-left: 5px
+	font-family: 'MgOpenModataRegular', sans-serif
+	color: #EBEBEB
+
+
 
 .sponsors img
 	position: relative
@@ -416,11 +443,7 @@ a
 	position: relative
 	top: 32px
 
-.sponsors span
-	font-size: 24px
-	padding-right: 20px
-	font-family: 'MgOpenModataRegular', sans-serif
-	color: #EBEBEB
+
 	
 .who_we_are__inner
 	display: flex
@@ -852,6 +875,8 @@ a
 
 
 @media screen and (max-width: 768px)
+	.sponsor__list
+		width: 95%
 	.container
 		width: 580px
 	.header_logo h1
@@ -993,6 +1018,7 @@ a
 	.plan__item
 		width: 260px
 
+
 @media screen and (max-width: 608px)
 	.container
 		width: 480px
@@ -1096,6 +1122,48 @@ a
 	.skills
 		height: auto
 		flex-flow: column
+	.designer
+		min-height: 210px
+		width: 90%
+		margin: 0 0 20px 0
+	.my_skills
+		width: 90%
+		padding: 15px 
+	.skill_name
+		width: 20%
+	.feature_list
+		flex-flow: column
+		justify-content: center
+	.feature_item
+		display: flex
+		flex-flow: column wrap
+		justify-content: center
+		width: 100%
+		margin-bottom: 20px
+	.feature_item img
+		height: 96px
+	.feature_item_title
+		font-size: 24px
+	.feature_item_sum
+		font-size: 42px
+	.watch
+		width: 100%
+		padding: 1% 6%
+	.women
+		display: none
+	.sponsor__list
+		flex-flow: column
+		justify-content: center
+	.sponsor__item
+		justify-content: center
+	.sponsor__title
+		width: 123px
+	.sponsor__img 
+		height: 100%
+		width: 100%
+	
+
+
 
 	#menu-toggle:checked + label + #menu 
 	    top: 60%
