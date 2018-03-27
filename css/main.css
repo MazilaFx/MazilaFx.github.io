@@ -1299,10 +1299,10 @@ a {
     right: 0;
   }
   label:before {
-    top: 60%;
+    top: 70%;
   }
   label:after {
-    top: 40%;
+    top: 30%;
   }
   #menu {
     top: 50%;
