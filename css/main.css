@@ -1299,13 +1299,13 @@ a {
     right: 0;
   }
   label:before {
-    top: 82%;
+    top: 80%;
   }
   label:after {
-    top: 98%;
+    top: 96%;
   }
   #menu {
-    top: 48%;
+    top: 46%;
     width: 30px;
     -webkit-transition: .2s ease;
     transition: .2s ease;
