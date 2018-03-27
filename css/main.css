@@ -1401,7 +1401,7 @@ a {
 
 @media screen and (max-width: 1300px) {
   .plans {
-    width: 900px;
+    width: 1200px;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -1416,6 +1416,7 @@ a {
   .plans {
     -ms-flex-flow: wrap;
     flex-flow: wrap;
+    width: 900px;
   }
   .plan__item {
     width: 300px;
