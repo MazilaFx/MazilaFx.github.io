@@ -1556,6 +1556,9 @@ a {
     padding: 10px 0  0 0;
     margin-bottom: 20px;
   }
+  .section_item img {
+    height: 45px;
+  }
   .sections {
     height: auto;
   }
